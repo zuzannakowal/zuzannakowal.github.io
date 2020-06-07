@@ -8,11 +8,14 @@ body, html{
 
 .main-container{
    width:400px;
+   @extwidth: 400px;
    @media (min-width: 768px) {
      width: 600px;
+     @extwidth: 600px;
    }
    @media (min-width: 1280px) {
      width: 1200px;
+     @extwidth: 1200px;
    }
    background-color: white;
    border-radius: 25px;
@@ -21,7 +24,7 @@ body, html{
 .logo-container{
    margin-top: 15px;
    margin-left: 20px;
-   width: 1160px;
+   width: @extwidth - 40px;
    background-color: #57646d;
    border-radius: 5px;
    display: flex;
