@@ -5,15 +5,32 @@
 @smallmargins: 5px;
 
 
+//operators
+
+//mapa kolorow
+
+#colors() {
+  tloduze: #a1a1a1;
+  tlologo: #57646d;
+  navicolor: #29498f;
+  navibgcolor: #dddee2;
+  downloadcolor: #641821;
+  downloadbgcolor: #ebd5d8;
+  topicbgcolor: #ebeff2;
+}
+
+
 body, html{
    margin: 0;
-   background-color: #a1a1a1;
+   background-color: #colors[tloduze];
    padding-top: 30px;
    display: flex;
    justify-content: center;
    //padding-top: 15px;
 }
 
+
+//przyklad nestingu
 .main-container{
    width: 100%;
    padding: 20px 0px 50px;
@@ -44,7 +61,7 @@ body, html{
 .logo-container{
    margin-top: 15px;
    .extmargins();
-   background-color: #57646d;
+   background-color: #colors[tlologo];
    border-radius: @smallradius;
    display: flex;
    justify-content: space-between;
@@ -70,10 +87,10 @@ body, html{
 }
 
 .navigation{
-   color: #29498f;
+   color: #colors[navicolor];
+   background-color: #colors[navibgcolor];
    margin-top: 5px;
    .extmargins();
-   background-color: #dddee2;
    border-radius: 5px;
    font: 1em sans-serif
 }
@@ -110,9 +127,9 @@ body, html{
    height: 45px;
    font: 1em sans-serif;
    font-size: 20px;
-   color: #641821;
+   color: #colors[downloadcolor];
    .extmargins();
-   background-color: #ebd5d8;
+   background-color: #colors[downloadbgcolor  ];
    border-radius: 5px;
    display: flex;
    justify-content: center;
@@ -125,7 +142,7 @@ body, html{
 }
 
 .download2:hover{
-   background-color: #ebeff2;
+   background-color: #colors[topicbgcolor];
 }
 
 .sections{
@@ -176,7 +193,7 @@ body, html{
 }
 
 .topics-row{
-   background-color: #ebeff2;
+   background-color: #colors[topicbgcolor];
    display: flex;
    justify-content: space-between;
 }
@@ -281,7 +298,7 @@ a:hover{
    .extmargins();
    margin-top: 20px;
    border-radius: 5px;
-   background-color: #ebeff2;
+   background-color: #colors[topicbgcolor];
    display: flex;
    justify-content: space-between;
 }
@@ -316,8 +333,10 @@ a:hover{
 
 .footer-bottom{
    font: 1em sans-serif;
-   font-size: 8px;
+   font-size: 10px;
    color: #29498f;
    height: 30px;
    margin-top: 20px;
+   display: flex;
+   justify-content: center;
 }
