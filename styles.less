@@ -1,6 +1,7 @@
 @extwidth: 1200px;
 @smallradius: 5px;
 @bigradius: 25px;
+@margins: 20px;
 
 
 body, html{
@@ -29,9 +30,8 @@ body, html{
 
 .logo-container{
    margin-top: 15px;
-   margin-left: 20px;
-   margin-right: 20px;
-   width: 100%;
+   margin-left: @margins;
+   margin-right: @margins;
    background-color: #57646d;
    border-radius: @smallradius;
    display: flex;
@@ -39,6 +39,7 @@ body, html{
 }
 
 .logo-container-left{
+   margin-left: 10px
    display: flex;
    justify-content: flex-start;
 }
