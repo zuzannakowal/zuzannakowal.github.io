@@ -1,0 +1,298 @@
+body, html{
+   margin: 0;
+   background-color: #a1a1a1;
+   display: flex;
+   justify-content: center;
+   padding-top: 15px;
+}
+
+.main-container{
+   width:400px;
+   @media (min-width: 768px) {
+     width: 600px;
+   }
+   @media (min-width: 1280px) {
+     width: 800px;
+   }
+   background-color: white;
+   border-radius: 25px;
+}
+
+.logo-container{
+   margin-top: 15px;
+   margin-left: 20px;
+   width: 1160px;
+   background-color: #57646d;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo-container-left{
+   display: flex;
+   justify-content: flex-start;
+}
+
+.logo-desc{
+   font: 1em sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 15px;
+   color: white;
+}
+
+.searchbar{
+   margin-top: 40px;
+   margin-right: 5px;
+}
+
+.navigation{
+   color: #29498f;
+   margin-top: 5px;
+   margin-left: 20px;
+   width: 1160px;
+   background-color: #dddee2;
+   border-radius: 5px;
+   font: 1em sans-serif
+}
+
+.navigation-top{
+   font: 1em sans-serif;
+   font-size: 12px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav-right{
+   display: flex;
+   justify-content: flex-start;
+}
+
+.nav-item:hover{
+   color: red;
+   text-decoration: underline;
+}
+
+.nav-left{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.navigation-bottom{
+   font: 1em sans-serif;
+   font-size: 12px;
+}
+
+.download{
+   margin-top: 10px;
+   margin-left: 20px;
+   height: 45px;
+   font: 1em sans-serif;
+   font-size: 20px;
+   color: #641821;
+   width: 1160px;
+   background-color: #ebd5d8;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+}
+
+.download2{
+   margin-top: 13px;
+   text-decoration: underline;
+   text-decoration-color: #29498f;
+}
+
+.download2:hover{
+   background-color: #ebeff2;
+}
+
+.sections{
+   margin-top: 40px;
+}
+
+.section{
+   font: 1em sans-serif;
+   font-size: 10px;
+   padding-top: 5px;
+   margin-top: 10px;
+   margin-left: 20px;
+   padding-bottom: 7px;
+   width: 1160px;
+   background-color: #6a7781;
+   border-radius: 5px;
+}
+.section-title{
+   margin-left: 5px;
+   font-weight: bold;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+}
+
+.section-title-right{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.section-title-topics{
+   width: 10vw;
+   text-align: center;
+}
+
+.section-title-posts{
+   width: 10vw;
+   text-align: center;
+}
+
+.section-title-last{
+   width: 15vw;
+}
+
+.section-topics{
+   font-size: 12px;
+   width: 1150px;
+   margin-top: 2px;
+   margin-left: 5px;
+}
+
+.topics-row{
+   background-color: #ebeff2;
+   display: flex;
+   justify-content: space-between;
+}
+
+.topics-row-left{
+   display: flex;
+   justify-content: flex-start;
+}
+
+.topics-row-main-title{
+   font-weight: bold;
+   margin-top: 3px;
+   color: #29498f;
+}
+
+.topics-row-main-title:hover{
+   color: red;
+}
+
+.topics-row-main-desc{
+   margin-top: 3px;
+   color: gray;
+}
+
+a{
+   color: #29498f;
+}
+
+a:hover{
+   color: red;
+   text-decoration: underline;
+}
+
+.topics-row-right{
+   display: flex;
+   justify-content: flex-end;
+   color: gray;
+}
+
+.topics-row-topics{
+   width: 10vw;
+   text-align: center;
+}
+
+.topics-row-posts{
+   width: 10vw;
+   text-align: center;
+}
+
+.topics-row-last{
+   width: 15vw;
+}
+
+.topics-row-last-name{
+   font-weight: bold;
+   color: #29498f;
+}
+
+.topics-row-last-name:hover{
+   color: red;
+}
+
+.vader{
+   font-weight: bold;
+   color: #009900;
+}
+
+.vader:hover{
+   text-decoration: underline;
+}
+
+.bottom-row{
+   font: 1em sans-serif;
+   font-size: 12px;
+   width: 1160px;
+   margin-top: 15px;
+   margin-left: 20px;
+}
+
+.bottom-row-title{
+   font-weight: bold;
+   color: #29498f;
+}
+
+.search{
+   height: 10px;
+}
+
+.bottom-row-desc{
+   color: gray;
+}
+
+.bottom-row-log:hover{
+   color: red;
+   text-decoration: underline;
+}
+
+.footer-top{
+   font: 1em sans-serif;
+   font-size: 14px;
+   color: #29498f;
+   height: 30px;
+   width: 1160px;
+   margin-top: 20px;
+   margin-left: 20px;
+   border-radius: 5px;
+   background-color: #ebeff2;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-item-left{
+   font-weight: bold;
+   margin-top: 5px;
+   margin-left: 5px;
+}
+
+.footer-item-right{
+   margin-top: 5px;
+   margin-right: 5px;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.footer-item1{
+   width: 8vw;
+}
+
+.footer-item2{
+   width: 12vw;
+}
+
+.footer-item3{
+   width: 12vw;
+}
+.footer-item4{
+   color: gray;
+}
