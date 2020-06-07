@@ -28,10 +28,15 @@ body, html{
    border-radius: @bigradius;
 }
 
+
+.extmargins {
+  margin-left: @margins;
+  margin-right: @margins;
+}
+
 .logo-container{
    margin-top: 15px;
-   margin-left: @margins;
-   margin-right: @margins;
+   .extmargins();
    background-color: #57646d;
    border-radius: @smallradius;
    display: flex;
@@ -60,8 +65,7 @@ body, html{
 .navigation{
    color: #29498f;
    margin-top: 5px;
-   margin-left: 20px;
-   width: 1160px;
+   .extmargins();
    background-color: #dddee2;
    border-radius: 5px;
    font: 1em sans-serif
