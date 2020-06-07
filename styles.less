@@ -1,25 +1,24 @@
-@extwidth: 1200px;
+/* plik stylow, zuzanna kowal
+*/
+
+
+//podstawowe szeorokosci
+
+@mediawidth: 1280px;
+
+// przyklad operatora
+@maxwidth: @mediawidth - 80px;
 @smallradius: 5px;
 @bigradius: 25px;
 @margins: 20px;
 @smallmargins: 5px;
 
 
-//operators
-
-/*mapa kolorow podstawowych
- uzywanych w projekcie */
-
-#colors() {
-  tloduze: #a1a1a1;
-  tlologo: #57646d;
-  navicolor: #29498f;
-  navibgcolor: #dddee2;
-  downloadcolor: #641821;
-  downloadbgcolor: #ebd5d8;
-  topicbgcolor: #ebeff2;
-}
-
+/*
+importuje mape kolorow z zewnetrzneg
+pliku
+*/
+@import "colors";
 
 body, html{
    margin: 0;
@@ -39,8 +38,8 @@ body, html{
      max-width: 1000px;
      padding: 20px 0px 50px;
    }
-   @media (min-width: 1280px) {
-     max-width: @extwidth;
+   @media (min-width: @mediawidth) {
+     max-width: @maxwidth;
      padding: 20px 0px 50px;
    }
    background-color: white;
