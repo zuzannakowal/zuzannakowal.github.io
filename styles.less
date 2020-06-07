@@ -1,4 +1,5 @@
-/* plik stylow, zuzanna kowal
+/*
+  plik stylow, zuzanna kowal
 */
 
 
@@ -12,6 +13,7 @@
 @bigradius: 25px;
 @margins: 20px;
 @smallmargins: 5px;
+@fontsize: 10px;
 
 
 /*
@@ -74,8 +76,9 @@ body, html{
 }
 
 .logo-desc{
+   @fontsize: 20px;
    font: 1em sans-serif;
-   font-size: 20px;
+   font-size: @fontsize;
    font-weight: bold;
    margin-top: 15px;
    color: white;
@@ -96,8 +99,9 @@ body, html{
 }
 
 .navigation-top{
+   @fontsize: 12px;
    font: 1em sans-serif;
-   font-size: 12px;
+   font-size: @fontsize;
    display: flex;
    justify-content: space-between;
 }
@@ -119,14 +123,16 @@ body, html{
 
 .navigation-bottom{
    font: 1em sans-serif;
-   font-size: 12px;
+   font-size: @fontsize;
+   @fontsize: 12px;
 }
 
 .download{
+  @fontsize: 20px;
    margin-top: 10px;
    height: 45px;
    font: 1em sans-serif;
-   font-size: 20px;
+   font-size: @fontsize;
    color: #colors[downloadcolor];
    .extmargins();
    background-color: #colors[downloadbgcolor  ];
@@ -151,7 +157,7 @@ body, html{
 
 .section{
    font: 1em sans-serif;
-   font-size: 10px;
+   font-size: @fontsize;
    padding-top: 5px;
    margin-top: 10px;
    padding-bottom: 7px;
@@ -187,9 +193,10 @@ body, html{
 }
 
 .section-topics{
-   font-size: 12px;
+   font-size: @fontsize;
    .intmargins();
    margin-top: 2px;
+   @fontsize: 12px;
 }
 
 .topics-row{
@@ -267,9 +274,10 @@ a:hover{
 
 .bottom-row{
    font: 1em sans-serif;
-   font-size: 12px;
+   font-size: @fontsize;
    .extmargins();
    margin-top: 15px;
+   @fontsize: 12px;
 }
 
 .bottom-row-title{
@@ -292,7 +300,7 @@ a:hover{
 
 .footer-top{
    font: 1em sans-serif;
-   font-size: 14px;
+   font-size: @fontsize;
    color: #colors[navicolor];
    height: 30px;
    .extmargins();
@@ -301,6 +309,7 @@ a:hover{
    background-color: #colors[topicbgcolor];
    display: flex;
    justify-content: space-between;
+   @fontsize: 14px;
 }
 
 .footer-item-left{
@@ -333,7 +342,7 @@ a:hover{
 
 .footer-bottom{
    font: 1em sans-serif;
-   font-size: 10px;
+   font-size: @fontsize;
    color: #colors[navicolor];
    height: 30px;
    margin-top: 20px;
