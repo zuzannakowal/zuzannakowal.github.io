@@ -38,7 +38,7 @@ body, html{
 // small margins mixin
 .intmargins {
   margin-left: @smallmargins;
-  // margin-right: @smallmargins;
+  margin-right: @smallmargins;
 }
 
 .logo-container{
@@ -251,9 +251,8 @@ a:hover{
 .bottom-row{
    font: 1em sans-serif;
    font-size: 12px;
-   width: 1160px;
+   .extmargins();
    margin-top: 15px;
-   margin-left: 20px;
 }
 
 .bottom-row-title{
@@ -279,9 +278,8 @@ a:hover{
    font-size: 14px;
    color: #29498f;
    height: 30px;
-   width: 1160px;
+   .extmargins();
    margin-top: 20px;
-   margin-left: 20px;
    border-radius: 5px;
    background-color: #ebeff2;
    display: flex;
@@ -291,12 +289,12 @@ a:hover{
 .footer-item-left{
    font-weight: bold;
    margin-top: 5px;
-   margin-left: 5px;
+   margin-left: @smallmargins;
 }
 
 .footer-item-right{
    margin-top: 5px;
-   margin-right: 5px;
+   margin-right: @smallmargins;
    display: flex;
    justify-content: flex-end;
 }
