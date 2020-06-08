@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonty do ikonek (domek, help etc) -->
+    <script src="https://kit.fontawesome.com/33a150093d.js" crossorigin="anonymous"></script>
     <title>Polskie forum wsparcia dla phpBB</title>
+
+    <!-- laduje less css -->
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <!-- kompilacja skryptu less -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js" ></script>
 </head>
 <body>
@@ -12,7 +17,7 @@
       <div class="main-container">
           <div class="logo-container">
               <div class="logo-container-left">
-                  <img src="transparentlogo.gif" width="195px" height="70px" alt="">
+                  <img src="transparentlogo.gif" width="149px" height="52px" alt="">
                   <div class="logo-desc">
                       <span class="logo-desc2">Polskie forum wsparcia dla phpBB</span>
                   </div>
@@ -24,17 +29,17 @@
           <div class="navigation">
               <div class="navigation-top">
                   <div class="nav-right">
-                      <div class="nav-item">Więcej...</div>
-                      <div class="nav-item">FAQ</div>
+                      <div class="nav-item"><i class="fas fa-bars"></i> Więcej...</div>
+                      <div class="nav-item"><i class="fas fa-question-circle"></i> FAQ</div>
                   </div>
                   <div class="nav-left">
-                      <div class="nav-item">Zarejestruj się</div>
-                      <div class="nav-item">Zaloguj się</div>
+                      <div class="nav-item"><i class="far fa-edit"></i> Zarejestruj się</div>
+                      <div class="nav-item"><i class="fas fa-power-off"></i>  Zaloguj się</div>
                   </div>
               </div>
               <hr>
               <div class="navigation-bottom">
-                  <div class="nav-item">Strona główna</div>
+                  <div class="nav-item"><i class="fas fa-home"></i> Strona główna</div>
               </div>
           </div>
           <div class="download">
@@ -417,12 +422,13 @@
               </div>
           </div>
           <div class="footer-top">
-              <div class="footer-item-left"><a>Strona główna</a></div>
+              <div class="footer-item-left"><i class="fas fa-home"></i> <a>Strona główna</a></div>
               <div class="footer-item-right">
-                  <div class="footer-item1"><a>Kontakt z nami</a></div>
-                  <div class="footer-item2"><a>Zespół administracyjny</a></div>
-                  <div class="footer-item3"><a>Usuń ciasteczka witryny</a></div>
-                  <div class="footer-item4">Strefa czasowa UTC+01:00</div>
+                  <a><i class="fas fa-envelope"></i> <span>Kontakt z nami</span></a>
+                  <a><i class="fas fa-shield-alt"></i> <span>Zespół administracyjny</span></a>
+                  <a><i class="fas fa-trash-alt"></i> <span>Usuń ciasteczka witryny</span></a>
+
+                  Strefa czasowa UTC+01:00
               </div>
           </div>
       </div>

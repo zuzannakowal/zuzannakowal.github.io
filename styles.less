@@ -25,7 +25,7 @@ pliku
 body, html{
    margin: 0;
    background-color: #colors[tloduze];
-   padding-top: 30px;
+   padding-top: 2*@smallmargins;
    display: flex;
    justify-content: center;
    //padding-top: 15px;
@@ -42,11 +42,21 @@ body, html{
     visibility: hidden;
     width: 0px;
   }
+  .footer-item-right{
+    a span{
+      display: none;
+    }
+  }
   border-radius: @smallradius;
   @media (min-width: 600px){
     .section-title-right, .topics-row-right{
       visibility: visible;
       width: auto;
+    }
+    .footer-item-right{
+      a span{
+        display: none;
+      }
     }
   }
   @media (min-width: 1000px) {
@@ -58,6 +68,11 @@ body, html{
      .section-title-right, .topics-row-right{
        visibility: visible;
        width: auto;
+     }
+     .footer-item-right{
+       a span{
+         display: inline;
+       }
      }
      border-radius: @bigradius;
    }
@@ -71,9 +86,14 @@ body, html{
        visibility: visible;
        width: auto;
      }
+     .footer-item-right{
+       a span{
+         display: inline;
+       }
+     }
      border-radius: @bigradius;
    }
-   background-color: white;
+   background-color: #colors[containerbgcolor];
 }
 
 // external margins (big)
@@ -94,9 +114,11 @@ body, html{
 }
 
 .logo-container{
-   margin-top: 15px;
+   margin-top: 2*@smallmargins;
+   padding-top: 2*@smallmargins;
    .extmargins();
-   background-color: #colors[tlologo];
+   // background-color: #colors[tlologo];
+   background-image: linear-gradient(#colors[tlologo], #colors[tlologo2]);
    border-radius: @smallradius;
    display: flex;
    justify-content: space-between;
@@ -104,6 +126,7 @@ body, html{
 
 .logo-container-left{
    margin-left: 10px;
+   padding: @smallmargins 0;
    display: flex;
    justify-content: flex-start;
 }
@@ -118,8 +141,9 @@ body, html{
 }
 
 .searchbar{
-   margin-top: 40px;
+   margin-top: @margins;
    margin-right: 5px;
+   //margin-bottom: @smallmargins;
 }
 
 .navigation{
@@ -144,9 +168,12 @@ body, html{
    justify-content: flex-start;
 }
 
-.nav-item:hover{
+.nav-item{
+  margin-right: @smallmargins;
+  &:hover{
    color: red;
    text-decoration: underline;
+ }
 }
 
 .nav-left{
@@ -356,21 +383,12 @@ a:hover{
    margin-right: @smallmargins;
    display: flex;
    justify-content: flex-end;
-}
-
-.footer-item1{
-   width: 8vw;
-}
-
-.footer-item2{
-   width: 12vw;
-}
-
-.footer-item3{
-   width: 12vw;
-}
-.footer-item4{
-   color: gray;
+   padding: @smallmargins 0;
+   @fontsize: 11px;
+   font-size: @fontsize;
+   a {
+     margin-right: @smallmargins;
+   }
 }
 
 .footer-bottom{
