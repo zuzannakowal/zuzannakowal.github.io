@@ -10,9 +10,9 @@
 // przyklad operatora
 @maxwidth: @mediawidth - 80px;
 @smallradius: 5px;
-@bigradius: 25px;
-@margins: 20px;
+@bigradius: @smallradius * 5;
 @smallmargins: 5px;
+@margins: @smallmargins * 4;
 @fontsize: 10px;
 
 
@@ -344,8 +344,7 @@ a:hover{
    font: 1em sans-serif;
    font-size: @fontsize;
    color: #colors[navicolor];
-   height: 30px;
-   margin-top: 20px;
+   margin-top: @smallmargins;
    display: flex;
    justify-content: center;
 }
